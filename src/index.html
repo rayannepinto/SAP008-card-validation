@@ -8,26 +8,104 @@
 
   <body>
     <header>
-      <img class="logo-cabecalho" src="/imagens/magicplace.png">
-      <nav class="cabecalho">
-        <a class="cabecalho-menu">Sobre</a>
-        <a class="cabecalho-menu">Faça sua reserva</a>
+      <img class="logo-cabecalho" src="/src/imagens/magicplace.png">
+      <nav class="cabecalho-menu">
+        <a class="cabecalho-menu-item">Sobre</a>
+        <a class="cabecalho-menu-item">Faça sua reserva</a>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+
       <section class="segunda-parte">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <img class="imagem-about" src="imagens/cafe.jpg">
+        <div class="titulo-paragrafo">
+          <h1 class="titulo">Magic Place</h1>
+          <p class="paragrafo">Aqui, no Chalé Magic Place, você encontrará conforto e relaxamento para você e toda sua família. Possuímos cômodos aconchegantes que te farão ter vontade de nunca mais ir embora. Você poderá trazer seus filhos e bichinhos de estimação. Aproveite!</p>
+        </div>
+        
+        <div class="slider">
+
+          <div class="slides">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <input type="radio" name="radio-btn" id="radio6">
+            <!--Fim Radio Buttons-->
+
+            <!--Slide das Imagens-->
+            <div class="primeiro-slide">
+              <img src="/src/imagens/imagem1.jpg" alt="">
+            </div>
+            <div class="segundo-slide">
+              <img src="/src/imagens/imagem2.jpg" alt="">
+            </div>
+            <div class="terceiro-slide">
+              <img src="/src/imagens/imagem3.jpg" alt="">
+            </div>
+            <div class="quarto-slide">
+              <img src="/src/imagens/imagem4.jpg" alt="">
+            </div>
+            <div class="quinto-slide">
+              <img src="/src/imagens/imagem5.jpg" alt="">
+            </div>
+            <div class="sexto-slide">
+              <img src="/src/imagens/imagem6.jpg" alt="">
+            </div>
+
+            <!--Navigation Auto-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+              <div class="auto-btn5"></div>
+              <div class="auto-btn6"></div>
+            </div>
+
+          </div>
+
+          <!--Label dos Buttons-->
+          <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
+            <label for="radio6" class="manual-btn"></label>
+
+
+          </div>
+        
+        
+        
+        </div>
+      
       </section>
+    </main>
+      
 
       <section class="terceira-parte">
+        <h2>Valide seu cartão para fazer sua reserva!</h2>
         <div class="container-cartao">
+          <form action="">
+              <div class="inputBox">
+                <span>Número do Cartão</span>
+                <input type="text" maxlength="16" class="numero-cartao-input">
+              </div>
+          </form>
 
+          <buttom class="botao-verificar" type="submit">Verificar!</buttom>
+          <buttom class="botao-reserva" type="submit">Faça sua reserva!</buttom>
         </div>
 
       </section>
-    <footer></footer>
+
+    <footer>
+    </footer>
+    
     <script src="index.js" type="module"></script>
   </body>
 </html>
