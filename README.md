@@ -1,5 +1,5 @@
 # Chalé Magic Place
-(https://cdn.discordapp.com/attachments/997257620073218131/999382422447722536/magicplace.png)
+(https://github.com/rayannepinto/SAP008-card-validation/blob/main/src/imagens/magicplace.png)
 
 ## Índice
 
