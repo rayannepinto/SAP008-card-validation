@@ -1,111 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <title>Chalé Magic Place</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./imagens/magicplace.png" type="image/x-icon">; 
   </head>
 
   <body>
     <header>
-      <img class="logo-cabecalho" src="/src/imagens/magicplace.png">
+      <img class="logo-cabecalho" src="./imagens/magicplace.png">
       <nav class="cabecalho-menu">
-        <a class="cabecalho-menu-item">Sobre</a>
-        <a class="cabecalho-menu-item">Faça sua reserva</a>
+          <a class="cabecalho-menu-item" href="#segunda-parte">Sobre</a>
+          <a class="cabecalho-menu-item" href="#quarta-parte">Faça sua reserva</a>
       </nav>
     </header>
 
     <main>
 
-      <section class="segunda-parte">
+      <section class="segunda-parte" id="segunda-parte">
         <div class="titulo-paragrafo">
           <h1 class="titulo">Magic Place</h1>
-          <p class="paragrafo">Aqui, no Chalé Magic Place, você encontrará conforto e relaxamento para você e toda sua família. Possuímos cômodos aconchegantes que te farão ter vontade de nunca mais ir embora. Você poderá trazer seus filhos e bichinhos de estimação. Aproveite!</p>
+          <p class="paragrafo"> Aqui, no Chalé Magic Place, você encontrará conforto e relaxamento para você e toda sua família. Possuímos cômodos aconchegantes que te farão ter vontade de nunca mais ir embora. Você poderá trazer seus filhos e bichinhos de estimação.</p><br>
+
+          <h2 class="segundo-titulo">Aproveite!</h2>
         </div>
         
-        <div class="slider">
+        <div class="content-imagem">
 
-          <div class="slides">
-            <!--Radio Buttons-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <input type="radio" name="radio-btn" id="radio5">
-            <input type="radio" name="radio-btn" id="radio6">
-            <!--Fim Radio Buttons-->
-
-            <!--Slide das Imagens-->
-            <div class="primeiro-slide">
-              <img src="/src/imagens/imagem1.jpg" alt="">
+          <div class="imagem-central">
+            <div class="imagem-chale">
+              <img src="./imagens/imagem1.jpg" alt="">
             </div>
-            <div class="segundo-slide">
-              <img src="/src/imagens/imagem2.jpg" alt="">
             </div>
-            <div class="terceiro-slide">
-              <img src="/src/imagens/imagem3.jpg" alt="">
-            </div>
-            <div class="quarto-slide">
-              <img src="/src/imagens/imagem4.jpg" alt="">
-            </div>
-            <div class="quinto-slide">
-              <img src="/src/imagens/imagem5.jpg" alt="">
-            </div>
-            <div class="sexto-slide">
-              <img src="/src/imagens/imagem6.jpg" alt="">
-            </div>
-
-            <!--Navigation Auto-->
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-              <div class="auto-btn5"></div>
-              <div class="auto-btn6"></div>
-            </div>
-
           </div>
-
-          <!--Label dos Buttons-->
-          <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-            <label for="radio5" class="manual-btn"></label>
-            <label for="radio6" class="manual-btn"></label>
-
-
-          </div>
-        
-        
-        
         </div>
+        </section>
+
       
+      <section class="terceira-parte" id="terceira-parte">
+        <div class="baloes">
+        <div class="itens-balao"><img src="./imagens/cafedamanha.png">
+        <p>Café da manhã</p></div>
+        </div>
+
+        <div class="baloes">
+          <div class="itens-balao"><img src="./imagens/wifi.png">
+          <p>Wi-fi</p></div>
+        </div>
+
+        <div class="baloes">
+          <div class="itens-balao"><img src="./imagens/lareira.png">
+          <p>Lareira</p></div>
+        </div>
+
+        <div class="baloes">
+          <div class="itens-balao"><img src="./imagens/jacuzzi.png">
+          <p>Jacuzzi</p></div>
+        </div>
       </section>
-    </main>
+      
       
 
-      <section class="terceira-parte">
-        <h2>Valide seu cartão para fazer sua reserva!</h2>
-        <div class="container-cartao">
-          <form action="">
-              <div class="inputBox">
-                <span>Número do Cartão</span>
-                <input type="text" maxlength="16" class="numero-cartao-input">
-              </div>
-          </form>
-
-          <buttom class="botao-verificar" type="submit">Verificar!</buttom>
-          <buttom class="botao-reserva" type="submit">Faça sua reserva!</buttom>
+      <section class="quarta-parte" id="quarta-parte">
+        <div class="cartao-infos">
+        <h2>Valide seu cartão!</h2>
+        <p class="paragrafo-cartao">Após validar seu cartão sua reserva poderá ser feita!</p><br>
         </div>
-
+        <div id="resultado" class="resultado"></div><br>
+        
+        <div class="container-cartao">
+          <div class="cartao">
+            <div class="cartao-interno">
+              <div class="frente-cartao">
+                <div class="row">
+                  <img class="chip" src="./imagens/chip.png" width="60px">
+                  <h3 class="cartao-numero-titulo">Número do cartão:</h3><br>
+                </div>
+                
+                <form name="formulario" action="#" id="form-cartao" class="form">
+                  <div id="inputArea">
+                    <input type="text" id="numero-cartao" name="numeros" class="cartao-numero" data-js="cartaocredito" placeholder="XXXXXXXXXXXXXXXX" required maxlength="16"><br>
+                  </div>
+                  <div class="botoes">
+                    <br>
+                    <button type="submit" class="botao-verificar" id="botao-verificar" ><strong>Verificar</strong></button>
+                    <button type="submit" class="botao-reserva" id="botaoReserva"><strong>Faça sua reserva</strong></button>
+                  </div>
+                </form>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+        
       </section>
 
     <footer>
+      <section class="quinta-parte">
+        <img class="footer" src="./imagens/magicplace.png" alt="Imagem da logo com uma árvore" width="70px">
+        <p class="paragrafo-footer"><strong>Direitos de Autor. © 2022. Todos os direitos reservados.</strong></p>
+      </section>
+      
     </footer>
-    
-    <script src="index.js" type="module"></script>
+    <script src="./index.js" type="module"></script>
+    </main>
   </body>
 </html>
