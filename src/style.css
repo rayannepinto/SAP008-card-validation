@@ -51,7 +51,6 @@ header{
     border-top: 0.4px solid #FFF;
     display: flex;
     flex-direction: row;
-    gap: 90px;
     border-bottom: 0.4px solid #FFF;
     
 }
@@ -78,11 +77,12 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 180px;
+    margin: auto;
 }
 
 .content-imagem{
     display: flex;
+    margin: auto;
 }
 
 .imagem-chale{
@@ -309,5 +309,28 @@ header{
     font-family: 'Alata', sans-serif;
     color: #540B13;
     font-size: 15px;
+}
+
+.parte-grid{
+    border-top: 2px solid #FFF;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.container-imagens-grid{
+    max-width: 1300px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    margin: auto;
+
+}
+.container-imagens-grid img{
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(67, 40, 40, 0.75);
 }
 

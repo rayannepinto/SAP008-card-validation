@@ -11,12 +11,12 @@ const validator = {
         let cardLength = creditCardNumber.length;
 
         
-        let hide = creditCardNumber.substring(0, cardLength - 4);
+        let esconder = creditCardNumber.substring(0, cardLength - 4);
 
         
-        hide = hide.replace(/./g, '#');
+        esconder = esconder.replace(/./g, '#');
         let text = creditCardNumber.substring(cardLength -4);
-        let novoNumeroCartao = hide + text
+        let novoNumeroCartao = esconder + text
         return novoNumeroCartao;
     },
         

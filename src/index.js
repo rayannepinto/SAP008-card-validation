@@ -4,13 +4,12 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
 });
 
-
 const buscarNumero = () => {
-    let creditCard = document.getElementById("numero-cartao");
+    let creditCard = document.getElementById("numero-cartao");  
     
     creditCardNumber = creditCard.value;
-    
 };
+
 
 const mascarandoNumero = () => {
     let novoNumeroCartao = validator.maskify(creditCardNumber);
@@ -19,6 +18,7 @@ const mascarandoNumero = () => {
     numeroTransformado.type = "text";
     return(document.getElementById("numero-cartao").value = novoNumeroCartao);
 };
+
 
 function alertValid () {
     console.log(validator.isValid("651651531315"));
