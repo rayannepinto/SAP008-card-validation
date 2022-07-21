@@ -12,6 +12,7 @@
       <img class="logo-cabecalho" src="./imagens/magicplace.png">
       <nav class="cabecalho-menu">
           <a class="cabecalho-menu-item" href="#segunda-parte">Sobre</a>
+          <a class="cabecalho-menu-item" href="#parte-grid">O espaço</a>
           <a class="cabecalho-menu-item" href="#quarta-parte">Faça sua reserva</a>
       </nav>
     </header>
@@ -22,19 +23,16 @@
         <div class="titulo-paragrafo">
           <h1 class="titulo">Magic Place</h1>
           <p class="paragrafo"> Aqui, no Chalé Magic Place, você encontrará conforto e relaxamento para você e toda sua família. Possuímos cômodos aconchegantes que te farão ter vontade de nunca mais ir embora. Você poderá trazer seus filhos e bichinhos de estimação.</p><br>
-
           <h2 class="segundo-titulo">Aproveite!</h2>
         </div>
         
         <div class="content-imagem">
-
           <div class="imagem-central">
             <div class="imagem-chale">
               <img src="./imagens/imagem1.jpg" alt="">
             </div>
             </div>
           </div>
-        </div>
         </section>
 
       
@@ -60,12 +58,20 @@
         </div>
       </section>
       
+      <section class="parte-grid" id="parte-grid">
+        <div class="container-imagens-grid">
+            <img src="./imagens/imagem2.jpg" alt=""><br>
+            <img src="./imagens/imagem3.jpg" alt=""><br>
+            <img src="./imagens/imagem4.jpg" alt=""><br>
+            <img src="./imagens/imagem5.jpg" alt=""><br>
+        </div>
+      </section>
       
 
       <section class="quarta-parte" id="quarta-parte">
         <div class="cartao-infos">
         <h2>Valide seu cartão!</h2>
-        <p class="paragrafo-cartao">Após validar seu cartão sua reserva poderá ser feita!</p><br>
+        <p class="paragrafo-cartao">Após validar seu cartão, sua reserva poderá ser feita!</p><br>
         </div>
         <div id="resultado" class="resultado"></div><br>
         
@@ -80,7 +86,7 @@
                 
                 <form name="formulario" action="#" id="form-cartao" class="form">
                   <div id="inputArea">
-                    <input type="text" id="numero-cartao" name="numeros" class="cartao-numero" data-js="cartaocredito" placeholder="XXXXXXXXXXXXXXXX" required maxlength="16"><br>
+                    <input type="text" id="numero-cartao" name="numeros" class="cartao-numero" data-js="cartaocredito" placeholder="Digite o número do cartão" required maxlength="16"><br>
                   </div>
                   <div class="botoes">
                     <br>
