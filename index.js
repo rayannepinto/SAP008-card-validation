@@ -25,11 +25,11 @@ function alertValid () {
     if (creditCardNumber === "" || creditCardNumber === null) {
         document.getElementById("resultado").innerHTML = "*Campo não pode estar vazio!"
     } else if (validator.isValid(creditCardNumber) === false) {
-        document.getElementById("resultado").innerHTML = "Número inválido! Tente novamente."
+        document.getElementById("resultado").innerHTML = "Cartão inválido! Tente novamente."
         document.getElementById("botaoReserva").style.backgroundColor = "gray";
     } else if (validator.isValid(creditCardNumber) === true)
     {
-        document.getElementById("resultado").innerHTML = "Seu número é válido!"
+        document.getElementById("resultado").innerHTML = "Seu cartão é válido!"
         document.getElementById("botaoReserva").style.backgroundColor = "green";
     }
 }
