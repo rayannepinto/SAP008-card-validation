@@ -86,7 +86,8 @@
                 
                 <form name="formulario" action="#" id="form-cartao" class="form">
                   <div id="inputArea">
-                    <input type="text" id="numero-cartao" name="numeros" class="cartao-numero" data-js="cartaocredito" placeholder="Digite o número do cartão" required maxlength="16"><br>
+                    <input type="text" maxlength="16" id="numero-cartao" name="numeros" class="cartao-numero" data-js="cartaocredito" placeholder="Digite o número do cartão" required
+                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"><br>
                   </div>
                   <div class="botoes">
                     <br>
