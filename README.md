@@ -1,9 +1,9 @@
 # **Chalé Magic Place**
 
 
-![Logo Magic Place](src\imagens\magicplace.png)
+![Logo do Projeto](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/magicplace.png)
 
-## **Usuários e Interface**
+## **Usuários**
 
 O Chalé Magic Place foi desenvolvido para usuários que queiram acomodar-se em um lugar aconchegante.
 
@@ -12,37 +12,34 @@ O usuário entrará na página, verá o conteúdo e tudo que o Chalé ofecere. L
 
 ## **O Projeto (Validação de Cartão de Crédito)**
 
-- List itemA reserva só poderá ser feita se o cartão de crédito for validado através do Algoritmo de Luhn.
+- A reserva só poderá ser feita se o cartão de crédito for validado através do Algoritmo de Luhn.
 
 
-![Imagem 1 do Projeto](src\imagens\imagem1.png)
-
-
-
-
-![Imagem 2 do Projeto](src\imagens\imagem2.png)
+![imagem1.png](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/imagem1.png)
 
 
 
-![Imagem 3 do Projeto](src\imagens\imagem3.png)
+![imagem2.png](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/imagem2.png)
+
+
+
+![imagem3.png](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/imagem3.png)
+
 
 
 ## **Primeiro Protótipo**
 
 
-![Protótipo1](src\imagens\prot1.jpg)
+![prot1.jpg](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/prot1.jpg)
 
 
-![Protótipo2](src\imagens\prot2.jpg)
+![prot2.jpg](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/prot2.jpg)
 
 
 ### **Material Utilizado**
 
 * [Algoritmo de Luhn](https://www.linkedin.com/pulse/algoritmo-de-luhn-valida%C3%A7%C3%A3o-n%C3%BAmero-cart%C3%A3o-cr%C3%A9dito-pdi-hudson-martins-/?originalSubdomain=pt) 
-
 * [Estruturas Condicionais e Repetitivas](https://curriculum.laboratoria.la/pt/topics/javascript/02-flow-control/01-conditionals-and-loops)
-
 * [Tomando Decisões No Seu Código](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Building_blocks/conditionals)
-
 * [Trabalhando Com Objetos](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_Objects)
 
