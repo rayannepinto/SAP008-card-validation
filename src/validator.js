@@ -14,7 +14,7 @@ const validator = {
         let esconder = creditCardNumber.substring(0, cardLength - 4);
 
         
-        esconder = esconder.replace(/[0-9.]/g, '#');
+        esconder = esconder.replace(/./g, '#');
 
         let text = creditCardNumber.substring(cardLength -4);
         let novoNumeroCartao = esconder + text
