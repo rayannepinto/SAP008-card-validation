@@ -15,12 +15,12 @@ const mascarandoNumero = () => {
     let novoNumeroCartao = validator.maskify(creditCardNumber);
     let numeroTransformado = document.getElementById("numero-cartao");
 
-    numeroTransformado.type = "text";
+    numeroTransformado.type = "texto";
     return(document.getElementById("numero-cartao").value = novoNumeroCartao);
 };
 
 
-function cardValid () {
+function cartaoValidacao () {
     if (creditCardNumber === "" || creditCardNumber === null) {
         document.getElementById("resultado").innerHTML = "*Campo não pode estar vazio!"
     } else if (isNaN(creditCardNumber)){
@@ -49,11 +49,11 @@ let botaoVerificar = document.getElementById("botao-verificar");
         } else {
             validator.isValid(creditCardNumber);
         }
-        cardValid();
+        cartaoValidacao();
     });
 
 
-botaoVerificar.addEventListener("click", cardValid);
+botaoVerificar.addEventListener("click", cartaoValidacao);
  
 
 import validator from './validator.js'; 
