@@ -20,10 +20,11 @@ const mascarandoNumero = () => {
 };
 
 
-function alertValid () {
-    console.log(validator.isValid("651651531315"));
+function cardValid () {
     if (creditCardNumber === "" || creditCardNumber === null) {
         document.getElementById("resultado").innerHTML = "*Campo não pode estar vazio!"
+    } else if (isNaN(creditCardNumber)){
+        document.getElementById("resultado").innerHTML = "Digite apenas números!"
     } else if (validator.isValid(creditCardNumber) === false) {
         document.getElementById("resultado").innerHTML = "Cartão inválido! Tente novamente."
         document.getElementById("botaoReserva").style.backgroundColor = "gray";
@@ -35,10 +36,10 @@ function alertValid () {
 }
 
 let creditCardNumber = "";
-let caixa = document.getElementById("numero-cartao");
-caixa.addEventListener("change", buscarNumero);
-caixa.addEventListener("change", () => validator.maskify(creditCardNumber));
-caixa.addEventListener("change", mascarandoNumero);
+let caixaDoCartao = document.getElementById("numero-cartao");
+caixaDoCartao.addEventListener("change", buscarNumero);
+caixaDoCartao.addEventListener("change", () => validator.maskify(creditCardNumber));
+caixaDoCartao.addEventListener("change", mascarandoNumero);
 
 let botaoVerificar = document.getElementById("botao-verificar");
     botaoVerificar.addEventListener("click", () => {
@@ -48,12 +49,14 @@ let botaoVerificar = document.getElementById("botao-verificar");
         } else {
             validator.isValid(creditCardNumber);
         }
-        alertValid();
+        cardValid();
     });
 
 
-botaoVerificar.addEventListener("click", alertValid);
+botaoVerificar.addEventListener("click", cardValid);
  
 
 import validator from './validator.js'; 
 console.log(validator);
+
+
