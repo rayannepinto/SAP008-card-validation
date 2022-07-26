@@ -39,6 +39,10 @@ O usuário entrará na página, verá o conteúdo e tudo que o Chalé ofecere. L
 
 ![testeunitário1](https://github.com/rayannepinto/SAP008-card-validation/blob/79fff7b01a21a9ad17efe7c24b309643eea63a90/src/imagens/teste1.png)
 ![testeunitário2](https://github.com/rayannepinto/SAP008-card-validation/blob/79fff7b01a21a9ad17efe7c24b309643eea63a90/src/imagens/teste2.png)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 67d7dc4ac227051e2a9cfb76d72b91b760e0ad26
 
 ### **Material Utilizado**
 
