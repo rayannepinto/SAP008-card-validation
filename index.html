@@ -4,36 +4,32 @@
     <meta charset="utf-8">
     <title>Chalé Magic Place</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./imagens/magicplace.png" type="image/x-icon">; 
+    <link rel="shortcut icon" href="./imagens/magicplace.png" type="image/x-icon">
   </head>
 
   <body>
     <header>
       <img class="logo-cabecalho" src="./imagens/magicplace.png">
       <nav class="cabecalho-menu">
-          <a class="cabecalho-menu-item" href="#segunda-parte">Sobre</a>
-          <a class="cabecalho-menu-item" href="#parte-grid">O espaço</a>
-          <a class="cabecalho-menu-item" href="#quarta-parte">Faça sua reserva</a>
+        <a class="cabecalho-menu-item" href="#segunda-parte">Sobre</a>
+        <a class="cabecalho-menu-item" href="#parte-grid">O espaço</a>
+        <a class="cabecalho-menu-item" href="#quarta-parte">Faça sua reserva</a>
       </nav>
     </header>
 
     <main>
-
       <section class="segunda-parte" id="segunda-parte">
-        <div class="titulo-paragrafo">
+        <article class="titulo-paragrafo">
           <h1 class="titulo">Magic Place</h1>
           <p class="paragrafo"> Aqui, no Chalé Magic Place, você encontrará conforto e relaxamento para você e toda sua família. Possuímos cômodos aconchegantes que te farão ter vontade de nunca mais ir embora. Você poderá trazer seus filhos e bichinhos de estimação.</p><br>
           <h2 class="segundo-titulo">Aproveite!</h2>
-        </div>
+        </article>
         
-        <div class="content-imagem">
-          <div class="imagem-central">
-            <div class="imagem-chale">
-              <img src="./imagens/imagem1.jpg" alt="Um chalé muito aconchegante nas montanhas">
-            </div>
-            </div>
-          </div>
-        </section>
+        <figure class="conteudo-imagem">
+          <img class="imagem-chale" src="./imagens/imagem1.jpg" alt="Um chalé muito aconchegante nas montanhas">
+        </figure>
+
+      </section>
 
       
       <section class="terceira-parte" id="terceira-parte">
@@ -75,40 +71,23 @@
         </div>
         <div id="resultado" class="resultado"></div><br>
         
-        <div class="container-cartao">
-          <div class="cartao">
-            <div class="cartao-interno">
-              <div class="frente-cartao">
-                <div class="row">
-                  <img class="chip" src="./imagens/chip.png" width="60px">
-                  <h3 class="cartao-numero-titulo">Número do cartão:</h3><br>
-                </div>
-                
-                <form name="formulario" action="#" id="form-cartao" class="form">
-                  <div id="inputArea">
-                    <input type="text" id="numero-cartao" name="numeros" class="cartao-numero" placeholder="Digite apenas números" required="required" maxlength="16"><br>
-                  </div>
-                  <div class="botoes">
-                    <br>
-                    <button type="submit" class="botao-verificar" id="botao-verificar" ><strong>Verificar</strong></button>
-                    <button type="submit" class="botao-reserva" id="botaoReserva"><strong>Faça sua reserva</strong></button>
-                  </div>
-                </form>
-                  
-                </div>
-              </div>
+        <div class="container-cartao">      
+          <form name="formulario" action="#" id="form-cartao" class="form">
+          <input type="text" id="numero-cartao" name="numeros" class="cartao-numero" placeholder="Digite apenas números" required="required" maxlength="16"><br>
+          <br>
+          <div class="botoes">
+          <button type="submit" class="botao-verificar" id="botao-verificar" ><strong>Verificar</strong></button>
+          <button type="submit" class="botao-reserva" id="botaoReserva"><strong>Faça sua reserva</strong></button>
           </div>
-        </div>
-        
+          </form> 
+        </div>              
       </section>
 
     <footer>
-      <section class="quinta-parte">
         <img class="footer" src="./imagens/magicplace.png" alt="Imagem da logo com uma árvore escrito Magic Place" width="70px">
-        <p class="paragrafo-footer"><strong>Direitos de Autor. © 2022. Todos os direitos reservados.</strong></p>
-      </section>
-      
+        <p class="paragrafo-footer"><strong>Direitos de Autor. © 2022. Todos os direitos reservados.</strong></p>   
     </footer>
+
     <script src="./index.js" type="module"></script>
     </main>
   </body>
