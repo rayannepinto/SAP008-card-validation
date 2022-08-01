@@ -12,28 +12,28 @@ const validator = {
 
         
     isValid: (creditCardNumber) => {
-        let cardNumber = 0
+        let numeroCartao = 0
         let condition = false;
 
         
         for (let n = creditCardNumber.length - 1; n >= 0; n--) {
-            let cDigit = creditCardNumber.charAt(n); 
-            let nDigit = parseInt(cDigit, 10); 
+            let digitoCapturado = creditCardNumber.charAt(n); 
+            let digitoN = parseInt(digitoCapturado, 10); 
 
             
-            if (condition && (nDigit *= 2) > 9) {
-                nDigit -= 9;
+            if (condition && (digitoN *= 2) > 9) {
+                digitoN -= 9;
             }
 
             
-            cardNumber += nDigit; 
+            numeroCartao += digitoN; 
             condition = !condition; 
         }
         
-        return (cardNumber % 10) == 0; 
+        return (numeroCartao % 10) == 0; 
     }
 
-};
+}; 
 
 
 
