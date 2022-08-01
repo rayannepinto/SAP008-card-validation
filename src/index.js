@@ -41,20 +41,9 @@ chamadaNumeroCartao.addEventListener("change", () => validator.maskify(creditCar
 chamadaNumeroCartao.addEventListener("change", mascarandoNumero);
 
 let botaoVerificar = document.getElementById("botao-verificar");
-    botaoVerificar.addEventListener("click", () => {
-        if (creditCardNumber === "") {
-            document.getElementById("resultado").innerHTML = "*Campo não pode estar vazio!";
+    botaoVerificar.addEventListener("click", cartaoValidacao);
 
-        } else {
-            validator.isValid(creditCardNumber);
-        }
-        cartaoValidacao();
-    });
-
-
-botaoVerificar.addEventListener("click", cartaoValidacao);
- 
-
+    
 import validator from './validator.js'; 
 console.log(validator);
 
