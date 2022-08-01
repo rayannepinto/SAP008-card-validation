@@ -3,27 +3,35 @@
 
 ![Logo do Projeto](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/magicplace.png)
 
-## **Usuários**
-
-O Chalé Magic Place foi desenvolvido para usuários que queiram acomodar-se em um lugar aconchegante.
-
-O usuário entrará na página, verá o conteúdo e tudo que o Chalé ofecere. Logo após, verá a página para validação de seu cartão. Se o cartão conter um número inválido, uma mensagem pedindo para que um número válido seja escrito aparecerá. Se o usuário colocar um número válido, pronto, o botão de reserva ficará verde.
-
-
 ## **O Projeto (Validação de Cartão de Crédito)**
 
-- A reserva só poderá ser feita se o cartão de crédito for validado através do Algoritmo de Luhn.
+A fórmula compara um número com seu dígito de verificação incluído , que geralmente é anexado a um número de conta parcial para gerar o número de conta completo. Este número deve passar no seguinte teste:
+
+- Do dígito mais à direita (excluindo o dígito de verificação) e movendo para a esquerda, dobre o valor de cada segundo dígito. O dígito de verificação não é duplicado nem incluído neste cálculo; o primeiro dígito duplicado é o dígito localizado imediatamente à esquerda do dígito de verificação. Se o resultado desta operação de duplicação for maior que 9 (por exemplo, 8 × 2 = 16), então adicione os dígitos do resultado (por exemplo, 16: 1 + 6 = 7, 18: 1 + 8 = 9) ou, equivalentemente , subtraia 9 do resultado (por exemplo, 16: 16 - 9 = 7, 18: 18 - 9 = 9).
+- Faça a soma de todos os dígitos (incluindo o dígito de verificação).
+- Se o módulo total 10 for igual a 0 (se o total terminar em zero), o número é válido de acordo com a fórmula de Luhn; caso contrário, não é válido.
+
+## **Usuários**
+
+O usuário poderá inserir apenas números, caso contrário, uma mensagem dizendo "Digite apenas números aparecerá". Também não poderá deixar o campo de preenchimento em branco. Caso digite um número válido, uma mensagem o avisará e o botão de reserva ficará verde, caso o número seja inválido, o botão permanecerá cinza. 
 
 
-![imagem1.png](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/imagem1.png)
+## **Definição do Produto**
+
+O Chalé Magic Place foi desenvolvido para usuários que queiram acomodar-se em um lugar aconchegante para aproveitar com a família. O Chalé Magic Place oferece café da manhã, Wi-Fi, lareira e jacuzzi. O clima é agradável para relaxar e aproveitar da melhor forma possível: nas montanhas.
+
+
+## **Projeto Final**
+
+![imagem1.png](https://github.com/rayannepinto/SAP008-card-validation/blob/0a181b90942036f9f44da99f6d7dd09a07b4a7eb/src/imagens/site1.png)
 
 
 
-![imagem2.png](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/imagem2.png)
+![imagem2.png](https://github.com/rayannepinto/SAP008-card-validation/blob/0a181b90942036f9f44da99f6d7dd09a07b4a7eb/src/imagens/site2.png)
 
 
 
-![imagem3.png](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/imagem3.png)
+![imagem3.png](https://github.com/rayannepinto/SAP008-card-validation/blob/0a181b90942036f9f44da99f6d7dd09a07b4a7eb/src/imagens/site3.png)
 
 
 
@@ -35,10 +43,6 @@ O usuário entrará na página, verá o conteúdo e tudo que o Chalé ofecere. L
 
 ![prot2.jpg](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/prot2.jpg)
 
-## **Testes Unitários**
-
-![testeunitário1](https://github.com/rayannepinto/SAP008-card-validation/blob/79fff7b01a21a9ad17efe7c24b309643eea63a90/src/imagens/teste1.png)
-![testeunitário2](https://github.com/rayannepinto/SAP008-card-validation/blob/79fff7b01a21a9ad17efe7c24b309643eea63a90/src/imagens/teste2.png)
 
 
 ### **Material Utilizado**
