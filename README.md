@@ -3,7 +3,7 @@
 
 ![Logo do Projeto](https://github.com/rayannepinto/SAP008-card-validation/blob/3843638d26d43b918959ce625070db92626d9bb7/src/imagens/magicplace.png)
 
-## **O Projeto (Validação de Cartão de Crédito)**
+## **O Projeto (Algoritmo de Luhn)**
 
 A fórmula compara um número com seu dígito de verificação incluído , que geralmente é anexado a um número de conta parcial para gerar o número de conta completo. Este número deve passar no seguinte teste:
 
