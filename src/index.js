@@ -11,7 +11,7 @@ const buscarNumero = () => {
 };
 
 
-function cartaoValidacao () {
+function cartaoValidacao() {
     if (creditCardNumber === "") {
         document.getElementById("resultado").innerText = "*Campo não pode estar vazio!"
     } else if (isNaN(creditCardNumber)){
@@ -43,7 +43,6 @@ chamadaNumeroCartao.addEventListener("change", mascarandoNumero);
 let botaoVerificar = document.getElementById("botao-verificar");
     botaoVerificar.addEventListener("click", cartaoValidacao);
 
-    
 import validator from './validator.js'; 
 console.log(validator);
 

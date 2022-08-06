@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Chalé Magic Place</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./imagens/magicplace.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./imagens/magicplace.png"
+      type="image/x-icon"
+    />
   </head>
 
   <body>
     <header>
-      <img class="logo-cabecalho" src="./imagens/magicplace.png">
+      <img
+        class="logo-cabecalho"
+        src="./imagens/magicplace.png"
+        alt="Logo mostrando uma árvore com pássaros e borboletas"
+      />
       <nav class="cabecalho-menu">
         <a class="cabecalho-menu-item" href="#segunda-parte">Sobre</a>
         <a class="cabecalho-menu-item" href="#parte-grid">O espaço</a>
@@ -21,74 +29,130 @@
       <section class="segunda-parte" id="segunda-parte">
         <article class="titulo-paragrafo">
           <h1 class="titulo">Magic Place</h1>
-          <p class="paragrafo"> Aqui, no Chalé Magic Place, você encontrará conforto e relaxamento para você e toda sua família. Possuímos cômodos aconchegantes que te farão ter vontade de nunca mais ir embora. Você poderá trazer seus filhos e bichinhos de estimação.</p><br>
+          <p class="paragrafo">
+            Aqui, no Chalé Magic Place, você encontrará conforto e relaxamento
+            para você e toda sua família. Possuímos cômodos aconchegantes que te
+            farão ter vontade de nunca mais ir embora. Você poderá trazer seus
+            filhos e bichinhos de estimação.
+          </p>
+          <br />
           <h2 class="segundo-titulo">Aproveite!</h2>
         </article>
-        
-        <figure class="conteudo-imagem">
-          <img class="imagem-chale" src="./imagens/imagem1.jpg" alt="Um chalé muito aconchegante nas montanhas">
-        </figure>
 
+        <figure class="conteudo-imagem">
+          <img
+            class="imagem-chale"
+            src="./imagens/imagem1.jpg"
+            alt="Um chalé muito aconchegante nas montanhas"
+          />
+        </figure>
       </section>
 
-      
       <section class="terceira-parte" id="terceira-parte">
         <div class="baloes">
-        <div class="itens-balao"><img src="./imagens/cafedamanha.png" alt="Ícone de café">
-        <p>Café da manhã</p></div>
+          <div class="itens-balao">
+            <img src="./imagens/cafedamanha.png" alt="Ícone de café" />
+            <p>Café da manhã</p>
+          </div>
         </div>
 
         <div class="baloes">
-          <div class="itens-balao"><img src="./imagens/wifi.png" alt="Ícone de wi-fi">
-          <p>Wi-fi</p></div>
+          <div class="itens-balao">
+            <img src="./imagens/wifi.png" alt="Ícone de wi-fi" />
+            <p>Wi-fi</p>
+          </div>
         </div>
 
         <div class="baloes">
-          <div class="itens-balao"><img src="./imagens/lareira.png" alt="Ícone de lareira">
-          <p>Lareira</p></div>
+          <div class="itens-balao">
+            <img src="./imagens/lareira.png" alt="Ícone de lareira" />
+            <p>Lareira</p>
+          </div>
         </div>
 
         <div class="baloes">
-          <div class="itens-balao"><img src="./imagens/jacuzzi.png" alt="Ícone de jacuzzi">
-          <p>Jacuzzi</p></div>
+          <div class="itens-balao">
+            <img src="./imagens/jacuzzi.png" alt="Ícone de jacuzzi" />
+            <p>Jacuzzi</p>
+          </div>
         </div>
       </section>
-      
+
       <section class="parte-grid" id="parte-grid">
         <div class="container-imagens-grid">
-            <img src="./imagens/imagem2.jpg" alt="Foto de um quarto aconchegante com uma vela no chão"><br>
-            <img src="./imagens/imagem3.jpg" alt="Foto de uma sala com sofás, lustres e lareira"><br>
-            <img src="./imagens/imagem4.jpg" alt="Foto de dois pés com meias próximos da lareira"><br>
-            <img src="./imagens/imagem5.jpg" alt="Foto de uma cadeira e uma caneca na parte externa do chalé"><br>
+          <img
+            src="./imagens/imagem2.jpg"
+            alt="Foto de um quarto aconchegante com uma vela no chão"
+          /><br />
+          <img
+            src="./imagens/imagem3.jpg"
+            alt="Foto de uma sala com sofás, lustres e lareira"
+          /><br />
+          <img
+            src="./imagens/imagem4.jpg"
+            alt="Foto de dois pés com meias próximos da lareira"
+          /><br />
+          <img
+            src="./imagens/imagem5.jpg"
+            alt="Foto de uma cadeira e uma caneca na parte externa do chalé"
+          /><br />
         </div>
       </section>
-      
 
       <section class="quarta-parte" id="quarta-parte">
         <div class="cartao-infos">
-        <h2>Valide seu cartão!</h2>
-        <p class="paragrafo-cartao">Após validar seu cartão, sua reserva poderá ser feita!</p><br>
+          <h2>Valide seu cartão!</h2>
+          <p class="paragrafo-cartao">
+            Após validar seu cartão, sua reserva poderá ser feita!
+          </p>
+          <br />
         </div>
-        <div id="resultado" class="resultado"></div><br>
-        
-        <div class="container-cartao">      
+        <div id="resultado" class="resultado"></div>
+        <br />
+
+        <div class="container-cartao">
           <form name="formulario" action="#" id="form-cartao" class="form">
-          <input type="text" id="numero-cartao" name="numeros" class="cartao-numero" placeholder="Digite apenas números" required="required" maxlength="16"><br>
-          <br>
-          <div class="botoes">
-          <button type="submit" class="botao-verificar" id="botao-verificar" ><strong>Verificar</strong></button>
-          <button type="submit" class="botao-reserva" id="botaoReserva"><strong>Faça sua reserva</strong></button>
-          </div>
-          </form> 
-        </div>              
+            <input
+              type="text"
+              id="numero-cartao"
+              name="numeros"
+              class="cartao-numero"
+              placeholder="Digite apenas números"
+              required="required"
+              maxlength="16"
+            /><br />
+            <br />
+            <div class="botoes">
+              <button
+                type="submit"
+                class="botao-verificar"
+                id="botao-verificar"
+              >
+                <strong>Verificar</strong>
+              </button>
+              <button type="submit" class="botao-reserva" id="botaoReserva">
+                <strong>Faça sua reserva</strong>
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
 
-    <footer>
-        <img class="footer" src="./imagens/magicplace.png" alt="Imagem da logo com uma árvore escrito Magic Place" width="70px">
-        <p class="paragrafo-footer"><strong>Direitos de Autor. © 2022. Todos os direitos reservados.</strong></p>   
-    </footer>
+      <footer>
+        <img
+          class="footer"
+          src="./imagens/magicplace.png"
+          alt="Imagem da logo com uma árvore escrito Magic Place"
+          width="70px"
+        />
+        <p class="paragrafo-footer">
+          <strong
+            >Direitos de Autor. © 2022. Todos os direitos reservados.</strong
+          >
+        </p>
+      </footer>
 
-    <script src="./index.js" type="module"></script>
+      <script src="./index.js" type="module"></script>
     </main>
   </body>
 </html>
