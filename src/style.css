@@ -257,6 +257,12 @@ header {
     font-size: 30px;
 }
 
+.video {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #FFF;
+}
+
 .resultado {
     align-items: center;
     width: 390px;
